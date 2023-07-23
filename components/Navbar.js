@@ -14,7 +14,7 @@ function Navbar() {
       style={{
         height: overlayOpen ? "100vh" : "fit-content",
       }}
-      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-500 z-10"
+      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-500 z-50"
     >
       <div className="h-[100px] bg-[#171A33] flex items-center justify-between px-[100px]">
         <div>
@@ -85,7 +85,9 @@ function Navbar() {
           </li>
         </ul>
         <div>
-          <button className="bg-white h-12 px-6 text-black">Contact us</button>
+          <button className="bg-white h-12 text-sm px-6 text-black">
+            Contact us
+          </button>
         </div>
       </div>
       <div
