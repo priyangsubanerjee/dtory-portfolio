@@ -34,12 +34,19 @@ function Navbar() {
               setOverlayOpen(false);
               setstate(null);
             }}
-            className="h-full flex items-center px-8"
+            className="h-full flex flex-col justify-center px-8 space-y-1"
           >
-            Services
+            <span>Services</span>
+            <div
+              className="bg-white transition-all"
+              style={{
+                height: "1px",
+                width: state == null ? "50%" : "0%",
+              }}
+            ></div>
           </li>
           <li
-            className="h-full flex items-center px-8"
+            className="h-full flex flex-col justify-center px-8 space-y-1"
             onMouseEnter={() => {
               setOverlayOpen(true);
               setstate("dtory");
@@ -48,10 +55,17 @@ function Navbar() {
               setOverlayOpen(false);
             }}
           >
-            Dtory
+            <span>Dtory</span>
+            <div
+              className="bg-white transition-all"
+              style={{
+                height: "1px",
+                width: state == "dtory" ? "50%" : "0%",
+              }}
+            ></div>
           </li>
           <li
-            className="h-full flex items-center px-8"
+            className="h-full flex flex-col justify-center px-8 space-y-1"
             onMouseEnter={() => {
               setOverlayOpen(true);
               setstate("portfolio");
@@ -60,7 +74,14 @@ function Navbar() {
               setOverlayOpen(false);
             }}
           >
-            Portfolio
+            <span>Portfolio</span>
+            <div
+              className="bg-white transition-all"
+              style={{
+                height: "1px",
+                width: state == "portfolio" ? "50%" : "0%",
+              }}
+            ></div>
           </li>
         </ul>
         <div>
