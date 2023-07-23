@@ -7,6 +7,7 @@ import Hero from "@/components/Fragments/Hero";
 import Partners from "@/components/Fragments/Partners";
 import About from "@/components/Fragments/About";
 import Portfolio from "@/components/Fragments/Portfolio";
+import Testimonials from "@/components/Fragments/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Partners />
       <About />
       <Portfolio />
+      <Testimonials />
     </main>
   );
 }
