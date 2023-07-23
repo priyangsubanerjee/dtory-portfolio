@@ -1,100 +1,92 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
+import NavPortfolio from "./NavPortfolio";
+import NavDtory from "./NavDtory";
 
 function Navbar() {
-  const [height, setHeight] = useState("100px");
-  const [hovering, setHovering] = useState(true);
-
-  const [screenHeight, setScreenHeight] = useState(0);
+  const [overlayOpen, setOverlayOpen] = useState(false);
   const [state, setstate] = useState(null);
-
-  useEffect(() => {
-    hovering
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
-  }, [hovering]);
-
-  useEffect(() => {
-    setScreenHeight(window.innerHeight);
-  }, []);
-
   return (
-    <div className="fixed top-0 inset-x-0">
-      <div
-        style={{
-          height: "112px",
-        }}
-        className="flex px-[100px] bg-[#171A33] justify-between transition-all duration-500 z-10"
-      >
-        <div className="h-full flex items-center">
+    <nav
+      onMouseLeave={() => {
+        setstate(null);
+      }}
+      style={{
+        height: overlayOpen ? "100vh" : "fit-content",
+      }}
+      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-500 z-10"
+    >
+      <div className="h-[100px] bg-[#171A33] flex items-center justify-between px-[100px]">
+        <div>
           <img
             src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1689912033/Dtory/portfolio/logo_oaltfj.png"
-            className="h-9"
             alt=""
+            className="h-10"
           />
         </div>
-        <ul className="flex items-center space-x-16 font-light">
+        <ul className="flex items-center h-full text-white font-light cursor-pointer">
           <li
             onMouseEnter={() => {
-              setHeight("200px");
-              setHovering(true);
-              setstate("services");
-            }}
-            onMouseLeave={() => {
-              setHeight("100px");
-              setHovering(false);
+              setOverlayOpen(false);
               setstate(null);
             }}
-            className="h-full flex items-center group"
+            onMouseLeave={() => {
+              setOverlayOpen(false);
+              setstate(null);
+            }}
+            className="h-full flex items-center px-8"
           >
-            <span className="text-white">Services</span>
-
-            <div
-              style={{
-                height: screenHeight - 512,
-              }}
-              className={`absolute translate-y-[2000px] group-hover:translate-y-[512px] top-0 inset-x-0 bg-black/40 pointer-events-none z-0 transition-all`}
-            ></div>
+            Services
           </li>
           <li
+            className="h-full flex items-center px-8"
             onMouseEnter={() => {
-              setHeight("200px");
-              setHovering(true);
+              setOverlayOpen(true);
               setstate("dtory");
             }}
             onMouseLeave={() => {
-              setHeight("100px");
-              setHovering(false);
-              setstate(null);
+              setOverlayOpen(false);
             }}
-            className="h-full flex items-center group"
           >
-            <span className="text-white">Dtory</span>
-            <div
-              style={{
-                height: screenHeight - 512,
-              }}
-              className={`absolute translate-y-[2000px] group-hover:translate-y-[512px] top-0 inset-x-0 bg-black/40 pointer-events-none z-0 transition-all`}
-            ></div>
+            Dtory
+          </li>
+          <li
+            className="h-full flex items-center px-8"
+            onMouseEnter={() => {
+              setOverlayOpen(true);
+              setstate("portfolio");
+            }}
+            onMouseLeave={() => {
+              setOverlayOpen(false);
+            }}
+          >
+            Portfolio
           </li>
         </ul>
-        <div
-          style={{
-            height: hovering ? "400px" : "0px",
-          }}
-          className="absolute top-[112px] inset-x-0  bg-[#171A33] transition-all text-white"
-        >
-          {state === "services" ? (
-            <div>Services</div>
-          ) : state == "dtory" ? (
-            <div>Dtory</div>
-          ) : (
-            <div></div>
-          )}
+        <div>
+          <button className="bg-white h-12 px-6 text-black">Contact us</button>
         </div>
-        <div></div>
       </div>
-    </div>
+      <div
+        onMouseEnter={() => {
+          setOverlayOpen(true);
+        }}
+        onMouseLeave={() => {
+          setOverlayOpen(false);
+          setstate(null);
+        }}
+        style={{
+          height: overlayOpen ? "350px" : "0vh",
+        }}
+        className="bg-[#171A33] transition-all -mt-1 overflow-hidden text-white"
+      >
+        {state == "portfolio" ? (
+          <NavPortfolio />
+        ) : state == "dtory" ? (
+          <NavDtory />
+        ) : null}
+      </div>
+    </nav>
   );
 }
 

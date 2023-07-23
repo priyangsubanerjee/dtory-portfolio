@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-[100px]">
       <Navbar />
-      <div className="pt-[112px]">
+      <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptates
         quas, perferendis sit similique consequuntur rem ullam atque quis,
         laborum cupiditate? Illo voluptate asperiores tempore. Mollitia, unde.
