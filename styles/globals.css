@@ -5,3 +5,16 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.word {
+  color: transparent;
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.word.active {
+  color: white;
+  opacity: 1;
+}
