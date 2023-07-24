@@ -63,7 +63,7 @@ function About() {
     <div className="w-full bg-[#171A33] py-[130px] px-[100px] relative">
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690121193/Dtory/portfolio/aboutGradient_zrgtgz.png"
-        className="absolute left-0 -top-[50%] opacity-50"
+        className="absolute left-0 -top-[30%] opacity-50"
         alt=""
       />
       <h1 className="text-center text-white text-5xl font-bold">
@@ -85,6 +85,15 @@ function About() {
         What is “struggle” ? Work with us and see that there is not such word in
         our dictionary.
       </p>
+
+      <div className="flex items-center justify-center mt-24 space-x-4">
+        <button className="bg-white px-10 h-12 font-medium rounded-lg text-sm">
+          See plans
+        </button>
+        <button className="bg-transparent border border-white text-white px-10 h-12 font-medium rounded-lg text-sm">
+          Contact now
+        </button>
+      </div>
     </div>
   );
 }
