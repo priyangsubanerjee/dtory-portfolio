@@ -12,9 +12,9 @@ function Navbar() {
         setstate(null);
       }}
       style={{
-        height: overlayOpen ? "100vh" : "fit-content",
+        height: overlayOpen ? "100vh" : "100px",
       }}
-      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-500 z-50"
+      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-1000 z-50"
     >
       <div className="h-[100px] bg-[#171A33] flex items-center justify-between px-[100px]">
         <div>
@@ -85,7 +85,7 @@ function Navbar() {
           </li>
         </ul>
         <div>
-          <button className="bg-white h-12 text-sm px-6 text-black">
+          <button className="bg-white py-3 text-sm px-6 text-black rounded-lg">
             Contact us
           </button>
         </div>
@@ -101,7 +101,7 @@ function Navbar() {
         style={{
           height: overlayOpen ? "350px" : "0vh",
         }}
-        className="bg-[#171A33] transition-all -mt-1 overflow-hidden text-white"
+        className="bg-[#171A33] transition-all -mt-1 overflow-hidden text-white duration-700"
       >
         {state == "portfolio" ? (
           <NavPortfolio />

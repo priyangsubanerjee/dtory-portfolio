@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="font-mona-sans">
       <Hero />
       <Partners />
       <About />
