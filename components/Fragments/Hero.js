@@ -7,32 +7,32 @@ function Hero() {
     <div className="h-screen relative overflow-hidden bg-[#050026]">
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/4L1_zfwbpm.png"
-        className="4L1 absolute -top-[10%] right-[26%] object-cover scale-110 blur-3xl"
+        className="V4L1 absolute -top-[10%] right-[26%] object-cover scale-110 blur-3xl"
         alt=""
       />
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109409/Dtory/portfolio/5L3_g4jrio.png"
-        className="5L3 absolute -top-[10%] right-[0%] object-cover z-30 scale-110 blur-3xl"
+        className="V5L3 absolute -top-[10%] right-[0%] object-cover z-30 scale-110 blur-3xl"
         alt=""
       />
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/7L1_f8fcdr.png"
-        className="7L1 absolute -bottom-[10%] right-[0%] object-cover scale-125 blur-3xl"
+        className="V7L1 absolute -bottom-[10%] right-[0%] object-cover scale-125 blur-3xl"
         alt=""
       />
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/3L2_pnvjae.png"
-        className="3L2 absolute bottom-[50%] right-[40%] object-cover translate-y-1/2 z-20 blur-3xl"
+        className="V3L2 absolute bottom-[50%] right-[40%] object-cover translate-y-1/2 z-20 blur-3xl"
         alt=""
       />
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/2L2_vbxohs.png"
-        className="2L2 absolute -bottom-[10%] left-[0%] object-cover z-20 blur-3xl"
+        className="V2L2 absolute -bottom-[10%] left-[0%] object-cover z-20 blur-3xl"
         alt=""
       />
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/1L3_ala1nn.png"
-        className="1L3 absolute -top-[10%] left-[0%] object-cover z-30 blur-3xl"
+        className="V1L3 absolute -top-[10%] left-[0%] object-cover z-30 blur-3xl"
         alt=""
       />
       <div className="absolute h-full w-full backdrop-blur-3xl bg-black/30 z-40 flex">
