@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ThinkCreateGrow from "../ThinkCreateGrow";
+import Marquee from "react-fast-marquee";
 
 function Hero() {
   return (
@@ -37,11 +38,11 @@ function Hero() {
       />
       <div className="absolute h-full w-full backdrop-blur-3xl bg-black/30 z-40 flex">
         <div className="w-full mt-32">
-          <div className="flex items-center space-x-5">
+          <Marquee>
             {[...Array(20)].map((_, i) => {
               return <ThinkCreateGrow key={i} />;
             })}
-          </div>
+          </Marquee>
           <div className="text-white text-center my-16 w-[825px] mx-auto">
             <h1 className="text-[90px] font-bold leading-[1.2]">
               Every Design woven into a story
@@ -66,11 +67,11 @@ function Hero() {
               </svg>
             </button>
           </div>
-          <div className="flex items-center space-x-5">
+          <Marquee direction="right">
             {[...Array(20)].map((_, i) => {
               return <ThinkCreateGrow key={i} />;
             })}
-          </div>
+          </Marquee>
         </div>
       </div>
     </div>
