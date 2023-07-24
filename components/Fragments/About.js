@@ -20,7 +20,7 @@ function About() {
 
     window.addEventListener("scroll", () => {
       let words = document.querySelectorAll(".word");
-      let containerHeight = paraRef.current.getBoundingClientRect().height;
+      let containerHeight = paraRef.current?.getBoundingClientRect().height;
 
       for (let i = 0; i < words.length; i++) {
         let word = words[i];
@@ -28,7 +28,7 @@ function About() {
           i <
           (document.documentElement.scrollTop / containerHeight) *
             words.length -
-            90
+            60
         ) {
           word.classList.add("active");
         } else {
@@ -48,7 +48,7 @@ function About() {
             i <
             (document.documentElement.scrollTop / containerHeight) *
               words.length -
-              90
+              60
           ) {
             word.classList.add("active");
           } else {
@@ -73,7 +73,10 @@ function About() {
         Are you struggling with strong visual appearance ? or sales ? or a
         strong brand presence ?
       </p>
-      <p ref={paraRef} className="text-6xl leading-[1.3] font-semibold mt-10">
+      <p
+        ref={paraRef}
+        className="text-[70px] leading-[1.3] font-semibold mt-10"
+      >
         Well from no one cares to everyone craves to work with your brand.
         It&apos;s Dtory who will show you the path to the golden gate of amazing
         lorem & sales success.

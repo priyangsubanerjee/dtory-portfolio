@@ -3,7 +3,7 @@ import TestimonialCard from "../TestimonialCard";
 
 function Testimonials() {
   return (
-    <div className="py-[110px] px-[100px] bg-black">
+    <div className="py-[150px] px-[100px] bg-black bg-[url('https://res.cloudinary.com/db9kd4qbi/image/upload/v1690166006/Dtory/portfolio/Stylized_Grid_Mask_vkcizl.png')]">
       <h1 className="text-white text-5xl font-bold text-center">
         What people say
       </h1>
