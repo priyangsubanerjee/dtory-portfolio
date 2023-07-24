@@ -46,23 +46,29 @@
 @keyframes vector1 {
   0% {
     transform: translateX(0px) translateY(0px);
+    scale: 1.2;
   }
   50% {
     transform: translateX(200px) translateY(50px);
+    scale: 0.5;
   }
   100% {
     transform: translateX(0px) translateY(0px);
+    scale: 1.2;
   }
 }
 
 @keyframes vector2 {
   0% {
     transform: translateX(200px);
+    scale: 1.2;
   }
   50% {
     transform: translateX(0px);
+    scroll-behavior: 0.5;
   }
   100% {
     transform: translateX(200px);
+    scale: 1.2;
   }
 }
