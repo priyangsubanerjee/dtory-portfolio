@@ -81,7 +81,7 @@ function About() {
       </p>
       <p
         ref={paraRef}
-        className="text-[48px] leading-[1.3] font-semibold mt-10 font-mona-sans"
+        className="text-[60px] leading-[1.3] font-semibold mt-10 font-mona-sans"
       >
         Well from no one cares to everyone craves to work with your brand.
         It&apos;s Dtory who will show you the path to the golden gate of amazing
