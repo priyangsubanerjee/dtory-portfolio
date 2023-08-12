@@ -85,7 +85,7 @@ function About() {
       >
         Well from no one cares to everyone craves to work with your brand.
         It&apos;s Dtory who will show you the path to the golden gate of amazing
-        lorem & sales success.
+        brand presence & sales success.
       </p>
       <p className="text-white text-xl font-semibold mt-10">
         What is “struggle” ? Work with us and see that there is not such word in
@@ -93,10 +93,10 @@ function About() {
       </p>
 
       <div className="flex items-center justify-center mt-24 space-x-4">
-        <button className="bg-white px-10 h-12 font-medium rounded-lg text-sm">
+        <button className="bg-white w-[200px] px-10 h-12 font-medium rounded-lg text-sm">
           See plans
         </button>
-        <button className="bg-transparent border border-white text-white px-10 h-12 font-medium rounded-lg text-sm">
+        <button className="bg-transparent w-[200px] border border-white text-white px-10 h-12 font-medium rounded-lg text-sm">
           Contact now
         </button>
       </div>

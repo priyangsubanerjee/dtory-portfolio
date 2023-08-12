@@ -86,7 +86,7 @@ function Navbar() {
         </ul>
         <div>
           <button className="bg-white py-3 text-sm px-6 text-black rounded-lg">
-            Contact us
+            Contact now
           </button>
         </div>
       </div>
