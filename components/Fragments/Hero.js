@@ -43,9 +43,9 @@ function Hero() {
               return <ThinkCreateGrow key={i} />;
             })}
           </Marquee>
-          <div className="text-white text-center my-16 w-[825px] mx-auto">
-            <h1 className="text-[90px] font-bold leading-[1.2]">
-              Every Design woven into a story
+          <div className="text-white text-center my-16 mx-auto">
+            <h1 className="text-[72px] leading-[1.4] font-[1000] font-mona-sans">
+              Every Design Woven <br /> Into A Story
             </h1>
             <p className="mt-16">
               We play with colors and elements to create visually amazing shit
