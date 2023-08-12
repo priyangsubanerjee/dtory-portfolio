@@ -8,12 +8,12 @@ function NavDtory() {
     let interval = setInterval(() => {
       setHeight((prev) => {
         if (prev < 446) {
-          return prev + 1;
+          return prev + 4;
         }
         clearInterval(interval);
         return prev;
       });
-    }, 0.5);
+    }, 0.1);
     return () => {
       clearInterval(interval);
     };

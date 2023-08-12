@@ -101,7 +101,7 @@ function Navbar() {
         style={{
           height: overlayOpen ? "350px" : "0vh",
         }}
-        className="bg-[#171A33] transition-all -mt-1 overflow-hidden text-white duration-700"
+        className="bg-[#171A33] transition-all -mt-1 overflow-hidden text-white duration-500"
       >
         {state == "portfolio" ? (
           <NavPortfolio />
