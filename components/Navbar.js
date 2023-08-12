@@ -14,7 +14,7 @@ function Navbar() {
       style={{
         height: overlayOpen ? "100vh" : "100px",
       }}
-      className="fixed top-0 inset-x-0 bg-black/50 transition-all duration-1000 z-50"
+      className="fixed top-0 inset-x-0 bg-black/50 transition-none duration-1000 z-50"
     >
       <div className="h-[100px] bg-[#171A33] flex items-center justify-between px-[100px]">
         <div>
