@@ -26,8 +26,18 @@ function NavDtory() {
         }}
         className="absolute top-0 left-[24%] w-[1px] bg-[#978DFF]"
       ></div>
-      <div className="absolute top-0 left-[44%] w-[1px] bg-[#978DFF]"></div>
-      <div className="absolute top-0 left-[80%] w-[1px] bg-[#978DFF]"></div>
+      <div
+        style={{
+          height: `${height}px`,
+        }}
+        className="absolute top-0 left-[44%] w-[1px] bg-[#978DFF]"
+      ></div>
+      <div
+        style={{
+          height: `${height}px`,
+        }}
+        className="absolute top-0 left-[80%] w-[1px] bg-[#978DFF]"
+      ></div>
       <ul className="space-y-9 text-3xl font-thin">
         <li>About us</li>
         <li>Career</li>
