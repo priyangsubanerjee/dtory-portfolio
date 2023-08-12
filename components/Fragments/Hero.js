@@ -51,7 +51,7 @@ function Hero() {
               We play with colors and elements to create <br /> visually amazing
               shit for your brand.
             </p>
-            <button className="mt-16 flex items-center w-fit mx-auto space-x-3">
+            <button className="mt-6 flex items-center w-fit mx-auto space-x-3">
               <span>See plans</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
