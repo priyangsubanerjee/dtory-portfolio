@@ -3,7 +3,7 @@ import React from "react";
 
 function Partners() {
   return (
-    <div className="flex items-center justify-between px-[100px] bg-black py-16">
+    <div className="flex items-center justify-between px-[100px] bg-[#101010] py-16">
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690120590/Dtory/portfolio/hoot_gx8in3.png"
         alt=""
