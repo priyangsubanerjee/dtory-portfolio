@@ -34,7 +34,7 @@ function About() {
           i <
           (document.documentElement.scrollTop / containerHeight) *
             words.length -
-            70
+            90
         ) {
           word.classList.add("active");
         } else {
@@ -72,7 +72,7 @@ function About() {
         className="absolute left-0 -top-[30%] opacity-50"
         alt=""
       />
-      <h1 className="text-center text-white text-5xl font-bold">
+      <h1 className="text-center text-white text-[40px] font-bold">
         But WTF is Dtory?
       </h1>
       <p className="text-white text-xl font-semibold mt-10">
