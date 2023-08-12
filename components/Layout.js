@@ -29,6 +29,11 @@ const monaSans = localFont({
       weight: "1000",
       style: "wide",
     },
+    {
+      path: "../public/mona/Mona-Sans-RegularWide.ttf",
+      weight: "1100",
+      style: "wide",
+    },
   ],
   variable: "--font-mona",
 });

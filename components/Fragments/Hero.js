@@ -47,9 +47,9 @@ function Hero() {
             <h1 className="text-[72px] leading-[1.4] font-[1000] font-mona-sans">
               Every Design Woven <br /> Into A Story
             </h1>
-            <p className="mt-16">
-              We play with colors and elements to create visually amazing shit
-              for your brand.
+            <p className="mt-16 font-[1100] leading-7">
+              We play with colors and elements to create <br /> visually amazing
+              shit for your brand.
             </p>
             <button className="mt-16 flex items-center w-fit mx-auto space-x-3">
               <span>See plans</span>
