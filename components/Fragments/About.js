@@ -23,12 +23,13 @@ function About() {
       let containerHeight = paraRef.current?.getBoundingClientRect().height;
 
       for (let i = 0; i < words.length; i++) {
+        console.log(i, document.documentElement.scrollTop / containerHeight);
         let word = words[i];
         if (
           i <
           (document.documentElement.scrollTop / containerHeight) *
             words.length -
-            60
+            110
         ) {
           word.classList.add("active");
         } else {
@@ -75,7 +76,7 @@ function About() {
       </p>
       <p
         ref={paraRef}
-        className="text-[70px] leading-[1.3] font-semibold mt-10 font-mona-sans"
+        className="text-[48px] leading-[1.3] font-semibold mt-10 font-mona-sans"
       >
         Well from no one cares to everyone craves to work with your brand.
         It&apos;s Dtory who will show you the path to the golden gate of amazing
