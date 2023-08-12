@@ -23,13 +23,18 @@ function About() {
       let containerHeight = paraRef.current?.getBoundingClientRect().height;
 
       for (let i = 0; i < words.length; i++) {
-        console.log(i, document.documentElement.scrollTop / containerHeight);
+        console.log(
+          i,
+          (document.documentElement.scrollTop / containerHeight) *
+            words.length -
+            100
+        );
         let word = words[i];
         if (
           i <
           (document.documentElement.scrollTop / containerHeight) *
             words.length -
-            110
+            140
         ) {
           word.classList.add("active");
         } else {
