@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 function Hero() {
   return (
-    <div className="h-screen relative overflow-hidden bg-[#050026]">
+    <div className="max-h-[780px] h-screen relative overflow-hidden bg-[#050026]">
       <img
         src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1690109285/Dtory/portfolio/4L1_zfwbpm.png"
         className="V4L1 absolute -top-[10%] right-[26%] object-cover scale-110 blur-3xl"
