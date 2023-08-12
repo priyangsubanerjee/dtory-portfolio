@@ -85,7 +85,7 @@ function Navbar() {
           </li>
         </ul>
         <div>
-          <button className="bg-white py-3 text-sm px-6 text-black font-semibold rounded-lg">
+          <button className="bg-white py-3 text-sm px-6 text-black font-medium rounded-lg">
             Contact now
           </button>
         </div>
