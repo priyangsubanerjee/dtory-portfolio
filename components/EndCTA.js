@@ -9,7 +9,7 @@ function EndCTA() {
         className="absolute -left-[5%] top-1/2 -translate-y-1/2 h-[300px]"
         alt=""
       />
-      <h1 className="text-center text-white font-bold text-4xl w-[800px] mx-auto leading-[1.4]">
+      <h1 className="text-center text-white font-[1000] text-4xl w-[800px] mx-auto leading-[1.4]">
         NO ONE CARES ? We do and the ones who didn&apos;t will from now {";)"}
       </h1>
       <div className="flex items-center mt-10 justify-center">

@@ -1,6 +1,6 @@
 import React from "react";
 
-function TestimonialCard() {
+function TestimonialCard({ testimonial }) {
   return (
     <div className="bg-white rounded-md p-7 h-full flex flex-col">
       <div className="flex items-center">
@@ -22,14 +22,11 @@ function TestimonialCard() {
           );
         })}
       </div>
-      <p className="text-sm text-[#333] mt-3 mb-3">
-        The team at Dtory does a great job at a great price. I have already had
-        two logos, a front-end design and a promotional video created by Dtory.
-        At the moment, we are in the process of implementing another project
-        together.
+      <p className="text-sm text-[#333] mt-3 mb-[16px] font-[1200] leading-5">
+        {testimonial.text}
       </p>
-      <h2 className="mt-auto">Dennis Kö</h2>
-      <p className="text-sm text-[#333] mt-1">Founder Hoot</p>
+      <h2 className="mt-auto text-sm font-semibold">{testimonial.name}</h2>
+      <p className="text-[13px] text-[#333] mt-2">{testimonial.post}</p>
     </div>
   );
 }
