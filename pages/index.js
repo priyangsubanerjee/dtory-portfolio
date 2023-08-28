@@ -10,12 +10,14 @@ import Portfolio from "@/components/Fragments/Portfolio";
 import Testimonials from "@/components/Fragments/Testimonials";
 import EndCTA from "@/components/EndCTA";
 import Footer from "@/components/Footer";
+import HowItWorks from "@/components/Fragments/HowItWorks";
 
 export default function Home() {
   return (
     <main className="font-mona-sans">
       <Hero />
       <Partners />
+      <HowItWorks/>
       <About />
       <Portfolio />
       <Testimonials />

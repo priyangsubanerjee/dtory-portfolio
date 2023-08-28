@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         "mona-sans": ["var(--font-mona)"],
       },
+      colors:{
+        light:"#CCCCCC"
+      }
     },
   },
   plugins: [],
