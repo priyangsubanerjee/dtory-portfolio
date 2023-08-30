@@ -34,7 +34,7 @@ function About() {
           i <
           (document.documentElement.scrollTop / containerHeight) *
             words.length -
-            90
+            150
         ) {
           word.classList.add("active");
         } else {
