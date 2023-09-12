@@ -56,7 +56,7 @@ function Portfolio() {
           />
         ))}
       </div>
-      <div className="h-28"></div>
+      <div className="h-36"></div>
       <Footer />
     </div>
   );
