@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import NavPortfolio from "./NavPortfolio";
 import NavDtory from "./NavDtory";
+import Link from "next/link";
 
 function Navbar() {
   const [overlayOpen, setOverlayOpen] = useState(false);
@@ -18,11 +19,13 @@ function Navbar() {
     >
       <div className="h-[100px] bg-[#171A33] flex items-center justify-between px-[100px]">
         <div>
-          <img
-            src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1689912033/Dtory/portfolio/logo_oaltfj.png"
-            alt=""
-            className="h-10"
-          />
+          <Link href="/">
+            <img
+              src="https://res.cloudinary.com/db9kd4qbi/image/upload/v1689912033/Dtory/portfolio/logo_oaltfj.png"
+              alt=""
+              className="h-10"
+            />
+          </Link>
         </div>
         <ul className="flex items-center h-full text-white font-light cursor-pointer">
           <li
@@ -74,7 +77,9 @@ function Navbar() {
               setOverlayOpen(false);
             }}
           >
-            <span>Portfolio</span>
+            <Link href="/portfolio">
+              <span>Portfolio</span>
+            </Link>
             <div
               className="bg-white transition-all"
               style={{
